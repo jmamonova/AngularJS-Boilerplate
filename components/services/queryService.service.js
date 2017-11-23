@@ -34,7 +34,7 @@
 
 
   angular
-    .module('boilerplate')
+    .module('swapi')
     .factory('QueryService', [
       '$http', '$q', 'CONSTANTS', QueryService
     ]);

@@ -15,7 +15,7 @@
  * 6. minify and copy all JS files
  * 7. copy fonts
  * 8. show build folder size
- * 
+ *
  */
 var gulp            = require('gulp'),
     browserSync     = require('browser-sync'),
@@ -205,7 +205,7 @@ gulp.task('templates', function() {
     ])
     .pipe($.minifyHtml())
     .pipe($.angularTemplatecache({
-      module: 'boilerplate'
+      module: 'swapi'
     }))
     .pipe(gulp.dest('_build/js'));
 });
@@ -255,7 +255,7 @@ gulp.task('default', ['browser-sync', 'sass', 'minify-css'], function() {
  * 6. minify and copy all JS files
  * 7. copy fonts
  * 8. show build folder size
- * 
+ *
  */
 gulp.task('build', function(callback) {
   runSequence(

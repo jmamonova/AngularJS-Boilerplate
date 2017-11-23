@@ -24,7 +24,7 @@
      *
      */
     angular
-      .module('boilerplate')
+      .module('swapi')
       .factory('LocalStorage', [
         '$window', '$rootScope', LocalStorageService
       ]);
