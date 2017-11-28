@@ -39,20 +39,26 @@
     // routes
     $routeProvider
       .when('/', {
-        templateUrl: 'views/home.html',
+        templateUrl: 'views/StarShips.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
-      .when('/contact', {
-        templateUrl: 'views/contact.html',
+      .when('/people', {
+        templateUrl: 'views/StarPeople.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
-      .when('/setup', {
-        templateUrl: 'views/setup.html',
+      .when('/planets', {
+        templateUrl: 'views/StarPlanets.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
+
+      .when ('/ships', {
+      templateUrl: 'views/StarShips.html',
+      controller: 'MainController',
+      controllerAs: 'main'
+  })
       .otherwise({
         redirectTo: '/'
       });
